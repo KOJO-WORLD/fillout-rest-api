@@ -5,6 +5,7 @@
     "nodemon": "^3.1.0"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "prod_win": "set NODE_ENV=production && node index.js"
   }
 }
