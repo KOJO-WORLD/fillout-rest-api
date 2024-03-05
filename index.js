@@ -6,6 +6,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.json({ message: 'API is working!' });
+});
+
+
 app.get('/:formId/filteredResponses', async (req, res) => {
     try {
         const formId = req.params.formId;
